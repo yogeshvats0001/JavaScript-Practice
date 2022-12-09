@@ -68,6 +68,6 @@ equalEl.addEventListener("click", function () {
     result = elementArray[0] / elementArray[2];
   }
   elementArray = [];
-  elementArray.push(result);
+  // elementArray.push(result);
   displayEl.value = result;
 });
