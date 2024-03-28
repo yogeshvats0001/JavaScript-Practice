@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <style>
+      .input__container,
+      .output__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+      }
+
+      .input__component {
+        height: 30px;
+      }
+
+      #entry {
+        width: 490px;
+      }
+
+      #entry__add__btn {
+        width: 75px;
+        background-color: lawngreen;
+        border-radius: 50%;
+      }
+
+      #data__list {
+        list-style-type: none;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main__container">
+      <div class="input__container">
+        <input
+          type="text"
+          name=""
+          id="entry"
+          placeholder="Enter your todo items"
+          class="input__component"
+        />
+        <button id="entry__add__btn" class="input__component">Add</button>
+      </div>
+      <div class="output__container">
+        <ul id="data__list"></ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
