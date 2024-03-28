@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div class="main__div">
+        <h2>Current Time : <span class = "clock__area">xxx</span></h2>
+    </div>
+
+    <script>
+        let clockArea = document.getElementsByClassName('clock__area');
+        console.log(clockArea);
+        setInterval(() => {
+            const date =  new Date();
+            const currentTime = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+            console.log(currentTime);
+            // document.getElementById('clock__area').innerText = currentTime;
+            clockArea[0].innerText = currentTime;
+        }, 1000);
+    </script>
+</body>
+</html>
+
+
+<!-- If you are using .getElementByClassName then we have to use [0] to access the element even if we have only one element associated with that class as .getElementByClassName returns an object or HTMLCollection -->
